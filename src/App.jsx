@@ -25,7 +25,9 @@ const App = () => {
     if (randomNum === index) {
       randomNum = index + 1;
     }
-    setIndex();
+
+    const newIndex = randomNum % People.length;
+    setIndex(newIndex);
   };
 
   return (
